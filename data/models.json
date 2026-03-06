@@ -1,0 +1,17 @@
+[
+  { "id": 1, "slug": "particle-transformer", "name": "ParT", "full_name": "Particle Transformer", "code_url": "https://github.com/jet-universe/particle_transformer", "introduced_year": 2022 },
+  { "id": 2, "slug": "particlenet", "name": "ParticleNet", "full_name": "ParticleNet", "code_url": "https://github.com/hqucms/ParticleNet", "introduced_year": 2019 },
+  { "id": 3, "slug": "efn", "name": "EFN", "full_name": "Energy Flow Network", "code_url": "https://energyflow.network", "introduced_year": 2018 },
+  { "id": 4, "slug": "pelican", "name": "PELICAN", "full_name": "Permutation Equivariant and Lorentz Invariant or Covariant Aggregator Network", "code_url": "https://github.com/abhi7b/PELICAN", "introduced_year": 2022 },
+  { "id": 5, "slug": "lorentznet", "name": "LorentzNet", "full_name": "LorentzNet", "code_url": "https://github.com/sdogsq/LorentzNet-release", "introduced_year": 2022 },
+  { "id": 6, "slug": "pfn", "name": "PFN", "full_name": "Particle Flow Network", "code_url": "https://energyflow.network", "introduced_year": 2018 },
+  { "id": 7, "slug": "fno", "name": "FNO", "full_name": "Fourier Neural Operator", "code_url": "https://github.com/neuraloperator/neuraloperator", "introduced_year": 2020 },
+  { "id": 8, "slug": "unet-pde", "name": "U-Net", "full_name": "U-Net (PDE baseline)", "code_url": null, "introduced_year": 2015 },
+  { "id": 9, "slug": "pangu-weather", "name": "Pangu-Weather", "full_name": "Pangu-Weather", "code_url": "https://github.com/198808xc/Pangu-Weather", "introduced_year": 2023 },
+  { "id": 10, "slug": "graphcast", "name": "GraphCast", "full_name": "GraphCast", "code_url": "https://github.com/google-deepmind/graphcast", "introduced_year": 2023 },
+  { "id": 11, "slug": "fourcastnet", "name": "FourCastNet", "full_name": "FourCastNet", "code_url": "https://github.com/NVlabs/FourCastNet", "introduced_year": 2022 },
+  { "id": 12, "slug": "nequip", "name": "NequIP", "full_name": "Neural Equivariant Interatomic Potentials", "code_url": "https://github.com/mir-group/nequip", "introduced_year": 2022 },
+  { "id": 13, "slug": "schnet", "name": "SchNet", "full_name": "SchNet", "code_url": "https://github.com/atomistic-machine-learning/schnetpack", "introduced_year": 2018 },
+  { "id": 14, "slug": "dimenet-pp", "name": "DimeNet++", "full_name": "Directional Message Passing Neural Network (++)", "code_url": "https://github.com/gasteigerjo/dimenet", "introduced_year": 2020 },
+  { "id": 15, "slug": "mace", "name": "MACE", "full_name": "MACE: Higher Order Equivariant Message Passing Neural Networks", "code_url": "https://github.com/ACEsuit/mace", "introduced_year": 2022 }
+]

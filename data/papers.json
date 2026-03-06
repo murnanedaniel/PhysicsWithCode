@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "arxiv_id": "2202.03772",
+    "title": "Particle Transformer for Jet Tagging",
+    "abstract": "Jet tagging is a critical task in high-energy physics. We propose Particle Transformer (ParT), a model based on the transformer architecture using particle interactions as additional inputs. ParT achieves new state-of-the-art performance on two widely-used jet tagging benchmarks: top quark tagging and quark-gluon discrimination.",
+    "published_date": "2022-02-08",
+    "venue": "ICML 2022",
+    "authors": [
+      { "name": "Huilin Qu", "affiliation": "CERN" },
+      { "name": "Congqiao Li", "affiliation": "Peking University" },
+      { "name": "Sitian Qian", "affiliation": "Peking University" }
+    ],
+    "task_ids": [1, 2],
+    "dataset_ids": [1, 2],
+    "model_id": 1,
+    "code_links": [
+      { "url": "https://github.com/jet-universe/particle_transformer", "stars": 412, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 2,
+    "arxiv_id": "1902.08570",
+    "title": "ParticleNet: Jet Tagging via Particle Clouds",
+    "abstract": "We propose ParticleNet, a customized neural network architecture using the concept of particle cloud—an unordered set of particles—for jet tagging. ParticleNet achieves state-of-the-art performance on top quark and quark-gluon tagging tasks, significantly outperforming previous methods.",
+    "published_date": "2019-02-22",
+    "venue": "Phys. Rev. D 101 (2020)",
+    "authors": [
+      { "name": "Huilin Qu", "affiliation": "Caltech" },
+      { "name": "Loukas Gouskos", "affiliation": "CERN" }
+    ],
+    "task_ids": [1, 2],
+    "dataset_ids": [1, 2],
+    "model_id": 2,
+    "code_links": [
+      { "url": "https://github.com/hqucms/ParticleNet", "stars": 334, "framework": "TensorFlow", "is_official": true }
+    ]
+  },
+  {
+    "id": 3,
+    "arxiv_id": "1810.05165",
+    "title": "Energy Flow Networks: Deep Sets for Particle Jets",
+    "abstract": "We introduce Energy Flow Networks (EFNs) and Particle Flow Networks (PFNs), two infrastructures for building jet classifiers based on the energy flow of the event. EFNs and PFNs are both infrared and collinear safe by construction. We demonstrate their performance on quark-gluon discrimination and top quark tagging.",
+    "published_date": "2018-10-11",
+    "venue": "JHEP 2019",
+    "authors": [
+      { "name": "Patrick T. Komiske", "affiliation": "MIT" },
+      { "name": "Eric M. Metodiev", "affiliation": "MIT" },
+      { "name": "Jesse Thaler", "affiliation": "MIT" }
+    ],
+    "task_ids": [1, 2],
+    "dataset_ids": [1, 2],
+    "model_id": 3,
+    "code_links": [
+      { "url": "https://github.com/pkomiske/EnergyFlow", "stars": 198, "framework": "TensorFlow", "is_official": true }
+    ]
+  },
+  {
+    "id": 4,
+    "arxiv_id": "2211.00454",
+    "title": "PELICAN: Permutation Equivariant and Lorentz Invariant or Covariant Aggregator Network for Jet Physics",
+    "abstract": "We introduce PELICAN, a neural network architecture that is equivariant under permutations of the input particles and equivariant (or invariant) under Lorentz symmetry. PELICAN achieves state-of-the-art performance on top quark tagging with fewer parameters than competing architectures.",
+    "published_date": "2022-11-01",
+    "venue": "arXiv 2022",
+    "authors": [
+      { "name": "Alexander Bogatskiy", "affiliation": "University of Chicago" },
+      { "name": "Timothy Hoffman", "affiliation": "University of Chicago" },
+      { "name": "Jan T. Offermann", "affiliation": "University of Chicago" }
+    ],
+    "task_ids": [1],
+    "dataset_ids": [1],
+    "model_id": 4,
+    "code_links": [
+      { "url": "https://github.com/abhi7b/PELICAN", "stars": 47, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 5,
+    "arxiv_id": "2201.08187",
+    "title": "LorentzNet: Lorentz Group Equivariant Graph Neural Networks for Jet Tagging",
+    "abstract": "We present LorentzNet, a graph neural network architecture that is equivariant under the Lorentz group. By exploiting Lorentz symmetry, LorentzNet achieves state-of-the-art performance on top quark tagging with significantly fewer parameters than transformer-based models.",
+    "published_date": "2022-01-20",
+    "venue": "arXiv 2022",
+    "authors": [
+      { "name": "Shiqi Gong", "affiliation": "IHEP Beijing" },
+      { "name": "Qi Meng", "affiliation": "Tsinghua University" },
+      { "name": "Jue Zhang", "affiliation": "Tsinghua University" }
+    ],
+    "task_ids": [1, 2],
+    "dataset_ids": [1, 2],
+    "model_id": 5,
+    "code_links": [
+      { "url": "https://github.com/sdogsq/LorentzNet-release", "stars": 89, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 6,
+    "arxiv_id": "2010.08895",
+    "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+    "abstract": "We propose the Fourier neural operator (FNO) to learn mappings between function spaces. We formulate the neural operator directly in Fourier space, enabling an expressive and efficient architecture. We evaluate on Navier-Stokes turbulence and demonstrate significant improvements over existing neural operators.",
+    "published_date": "2020-10-19",
+    "venue": "ICLR 2021",
+    "authors": [
+      { "name": "Zongyi Li", "affiliation": "Caltech" },
+      { "name": "Nikola Kovachki", "affiliation": "Caltech" },
+      { "name": "Kamyar Azizzadenesheli", "affiliation": "Caltech" }
+    ],
+    "task_ids": [3],
+    "dataset_ids": [3],
+    "model_id": 7,
+    "code_links": [
+      { "url": "https://github.com/neuraloperator/neuraloperator", "stars": 3100, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 7,
+    "arxiv_id": "2202.11214",
+    "title": "Pangu-Weather: A 3D High-Resolution Model for Fast and Accurate Global Weather Forecast",
+    "abstract": "We present Pangu-Weather, a deep learning based method for fast and accurate global weather forecast. Pangu-Weather employs a 3D Earth transformer architecture and hierarchical temporal aggregation. Pangu-Weather achieves more accurate deterministic forecasts than the operational IFS model across all tested variables.",
+    "published_date": "2022-11-04",
+    "venue": "Nature 2023",
+    "authors": [
+      { "name": "Kaifeng Bi", "affiliation": "Huawei Cloud" },
+      { "name": "Lingxi Xie", "affiliation": "Huawei Cloud" },
+      { "name": "Hengheng Zhang", "affiliation": "Huawei Cloud" }
+    ],
+    "task_ids": [4],
+    "dataset_ids": [4],
+    "model_id": 9,
+    "code_links": [
+      { "url": "https://github.com/198808xc/Pangu-Weather", "stars": 2200, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 8,
+    "arxiv_id": "2212.12794",
+    "title": "GraphCast: Learning skillful medium-range global weather forecasting",
+    "abstract": "We introduce GraphCast, a machine learning weather prediction system based on graph neural networks. GraphCast is trained on historical weather data to make predictions for many weather variables over the next 10 days at 0.25° resolution. GraphCast significantly outperforms the most accurate operational deterministic forecast systems.",
+    "published_date": "2022-12-24",
+    "venue": "Science 2023",
+    "authors": [
+      { "name": "Remi Lam", "affiliation": "Google DeepMind" },
+      { "name": "Alvaro Sanchez-Gonzalez", "affiliation": "Google DeepMind" },
+      { "name": "Matthew Willson", "affiliation": "Google DeepMind" }
+    ],
+    "task_ids": [4],
+    "dataset_ids": [4],
+    "model_id": 10,
+    "code_links": [
+      { "url": "https://github.com/google-deepmind/graphcast", "stars": 4700, "framework": "JAX", "is_official": true }
+    ]
+  },
+  {
+    "id": 9,
+    "arxiv_id": "2206.08916",
+    "title": "Learning Local Equivariant Representations for Large-Scale Atomistic Dynamics",
+    "abstract": "We present MACE, a higher-order message passing neural network for fast and accurate force fields. MACE achieves state-of-the-art accuracy on the MD17 benchmark and shows unprecedented performance on the 3BPA benchmark, demonstrating exceptional data efficiency and transferability.",
+    "published_date": "2022-06-17",
+    "venue": "NeurIPS 2022",
+    "authors": [
+      { "name": "Ilyes Batatia", "affiliation": "University of Cambridge" },
+      { "name": "David P. Kovacs", "affiliation": "University of Cambridge" },
+      { "name": "Gregor Simm", "affiliation": "University of Cambridge" }
+    ],
+    "task_ids": [5],
+    "dataset_ids": [5],
+    "model_id": 15,
+    "code_links": [
+      { "url": "https://github.com/ACEsuit/mace", "stars": 1100, "framework": "PyTorch", "is_official": true }
+    ]
+  },
+  {
+    "id": 10,
+    "arxiv_id": "2101.03164",
+    "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+    "abstract": "We introduce NequIP, an E(3)-equivariant neural network approach for learning interatomic potentials from quantum-mechanical calculations. NequIP achieves state-of-the-art accuracy on the MD17 benchmark while requiring significantly less training data than competing methods.",
+    "published_date": "2021-01-09",
+    "venue": "Nature Communications 2022",
+    "authors": [
+      { "name": "Simon Batzner", "affiliation": "Harvard University" },
+      { "name": "Albert Musaelian", "affiliation": "Harvard University" },
+      { "name": "Lixin Sun", "affiliation": "Harvard University" }
+    ],
+    "task_ids": [5],
+    "dataset_ids": [5],
+    "model_id": 12,
+    "code_links": [
+      { "url": "https://github.com/mir-group/nequip", "stars": 810, "framework": "PyTorch", "is_official": true }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1, "task_id": 1, "dataset_id": 1, "paper_id": 1, "model_id": 1,
+    "metric_values": { "AUC": 0.9858, "1/εB at εS=0.3": 4096 },
+    "is_sota": true, "verified": true, "submitted_at": "2022-02-08"
+  },
+  {
+    "id": 2, "task_id": 1, "dataset_id": 1, "paper_id": 4, "model_id": 4,
+    "metric_values": { "AUC": 0.9844, "1/εB at εS=0.3": 3435 },
+    "is_sota": false, "verified": true, "submitted_at": "2022-11-01"
+  },
+  {
+    "id": 3, "task_id": 1, "dataset_id": 1, "paper_id": 5, "model_id": 5,
+    "metric_values": { "AUC": 0.9837, "1/εB at εS=0.3": 2195 },
+    "is_sota": false, "verified": true, "submitted_at": "2022-01-20"
+  },
+  {
+    "id": 4, "task_id": 1, "dataset_id": 1, "paper_id": 2, "model_id": 2,
+    "metric_values": { "AUC": 0.9803, "1/εB at εS=0.3": 1615 },
+    "is_sota": false, "verified": true, "submitted_at": "2019-02-22"
+  },
+  {
+    "id": 5, "task_id": 1, "dataset_id": 1, "paper_id": 3, "model_id": 3,
+    "metric_values": { "AUC": 0.9795, "1/εB at εS=0.3": 1533 },
+    "is_sota": false, "verified": true, "submitted_at": "2018-10-11"
+  },
+  {
+    "id": 6, "task_id": 2, "dataset_id": 2, "paper_id": 1, "model_id": 1,
+    "metric_values": { "AUC": 0.8406 },
+    "is_sota": true, "verified": true, "submitted_at": "2022-02-08"
+  },
+  {
+    "id": 7, "task_id": 2, "dataset_id": 2, "paper_id": 5, "model_id": 5,
+    "metric_values": { "AUC": 0.8394 },
+    "is_sota": false, "verified": true, "submitted_at": "2022-01-20"
+  },
+  {
+    "id": 8, "task_id": 2, "dataset_id": 2, "paper_id": 2, "model_id": 2,
+    "metric_values": { "AUC": 0.8388 },
+    "is_sota": false, "verified": true, "submitted_at": "2019-02-22"
+  },
+  {
+    "id": 9, "task_id": 2, "dataset_id": 2, "paper_id": 3, "model_id": 3,
+    "metric_values": { "AUC": 0.8331 },
+    "is_sota": false, "verified": true, "submitted_at": "2018-10-11"
+  },
+  {
+    "id": 10, "task_id": 3, "dataset_id": 3, "paper_id": 6, "model_id": 7,
+    "metric_values": { "nRMSE": 0.0084 },
+    "is_sota": true, "verified": true, "submitted_at": "2020-10-19"
+  },
+  {
+    "id": 11, "task_id": 3, "dataset_id": 3, "paper_id": 6, "model_id": 8,
+    "metric_values": { "nRMSE": 0.0165 },
+    "is_sota": false, "verified": true, "submitted_at": "2020-10-19"
+  },
+  {
+    "id": 12, "task_id": 4, "dataset_id": 4, "paper_id": 7, "model_id": 9,
+    "metric_values": { "Z500 RMSE 1d (m²/s²)": 154, "Z500 RMSE 5d (m²/s²)": 774 },
+    "is_sota": false, "verified": true, "submitted_at": "2022-11-04"
+  },
+  {
+    "id": 13, "task_id": 4, "dataset_id": 4, "paper_id": 8, "model_id": 10,
+    "metric_values": { "Z500 RMSE 1d (m²/s²)": 121, "Z500 RMSE 5d (m²/s²)": 697 },
+    "is_sota": true, "verified": true, "submitted_at": "2022-12-24"
+  },
+  {
+    "id": 14, "task_id": 5, "dataset_id": 5, "paper_id": 9, "model_id": 15,
+    "metric_values": { "Energy MAE (meV)": 1.7, "Force MAE (meV/Å)": 17.0 },
+    "is_sota": true, "verified": true, "submitted_at": "2022-06-17"
+  },
+  {
+    "id": 15, "task_id": 5, "dataset_id": 5, "paper_id": 10, "model_id": 12,
+    "metric_values": { "Energy MAE (meV)": 2.3, "Force MAE (meV/Å)": 19.0 },
+    "is_sota": false, "verified": true, "submitted_at": "2021-01-09"
+  },
+  {
+    "id": 16, "task_id": 5, "dataset_id": 5, "paper_id": 9, "model_id": 13,
+    "metric_values": { "Energy MAE (meV)": 8.0, "Force MAE (meV/Å)": 76.0 },
+    "is_sota": false, "verified": true, "submitted_at": "2018-01-01"
+  }
+]
