@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fdatasets\u002F[slug]","\u002Fpapers\u002F[arxiv_id]","\u002Ftasks\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
