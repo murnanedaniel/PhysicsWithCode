@@ -98,7 +98,7 @@ export const tasks = tasksRaw as Task[]
 export const datasets = datasetsRaw as Dataset[]
 export const models = modelsRaw as MLModel[]
 export const papers = papersRaw as Paper[]
-export const results = resultsRaw as Result[]
+export const results = resultsRaw as unknown as Result[]
 
 // --- Lookup helpers ---
 
