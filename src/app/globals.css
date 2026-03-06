@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --nav-bg: #1a2f6e;
-    --nav-text: #e8eeff;
-  }
   body {
-    @apply bg-gray-50 text-gray-900 antialiased;
+    @apply bg-white text-gray-900 antialiased;
   }
   a {
-    @apply text-brand-600 hover:text-brand-700;
+    @apply text-inherit no-underline;
   }
 }
 

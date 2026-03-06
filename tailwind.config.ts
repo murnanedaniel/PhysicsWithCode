@@ -6,16 +6,17 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          50: "#f0f4ff",
-          100: "#dce6ff",
-          200: "#b9ceff",
-          500: "#3b6fd4",
-          600: "#2d5bbf",
-          700: "#2048a0",
-          900: "#1a2f6e",
+          50:  "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          500: "#3b82f6",
+          600: "#1a56db",
+          700: "#1e40af",
+          900: "#111827",
         },
       },
       fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "Fira Code", "ui-monospace", "monospace"],
       },
     },
