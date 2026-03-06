@@ -12,19 +12,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Navbar />
-        <main className="max-w-7xl mx-auto px-4 py-8">{children}</main>
-        <footer className="border-t border-gray-200 mt-16 py-8 text-center text-sm text-gray-500">
-          <p>
-            PhysicsWithCode — open source physics ML platform.{" "}
+        <main className="max-w-6xl mx-auto px-4 py-10">{children}</main>
+        <footer className="border-t border-gray-100 mt-20 py-6">
+          <div className="max-w-6xl mx-auto px-4 text-sm text-gray-400">
+            PhysicsWithCode — open source physics ML benchmark platform.{" "}
             <a
               href="https://github.com/murnanedaniel/PhysicsWithCode"
-              className="hover:underline"
+              className="hover:text-gray-600 underline"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
             </a>
-          </p>
+          </div>
         </footer>
       </body>
     </html>

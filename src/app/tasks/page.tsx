@@ -1,6 +1,25 @@
 import Link from "next/link"
 import { tasks, results, getDomain, domains } from "@/lib/data"
-import Badge from "@/components/Badge"
+
+// Small colored icon for each task card (like paperswithcode)
+const domainColors = [
+  "bg-blue-100 text-blue-600",
+  "bg-purple-100 text-purple-600",
+  "bg-green-100 text-green-600",
+  "bg-orange-100 text-orange-600",
+  "bg-pink-100 text-pink-600",
+]
+
+function TaskIcon({ index }: { index: number }) {
+  const color = domainColors[index % domainColors.length]
+  return (
+    <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 ${color}`}>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="w-5 h-5">
+        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    </div>
+  )
+}
 
 export default function TasksPage() {
   // Group tasks by top-level domain
@@ -23,54 +42,50 @@ export default function TasksPage() {
 
   return (
     <div>
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold text-gray-900">Tasks & Leaderboards</h1>
-        <p className="text-gray-500 mt-1">{tasks.length} benchmark tasks across physics domains</p>
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-2">
+          Browse State-of-the-Art
+        </h1>
+        <p className="text-sm text-gray-500">
+          <span className="font-medium text-gray-700">{topLevelDomains.filter(d => domainGroups[d.id]?.length).length}</span> physics domains
+          {" · "}
+          <span className="font-medium text-gray-700">{tasks.length}</span> benchmark tasks
+        </p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-10">
         {topLevelDomains.map((domain) => {
           const groupTasks = domainGroups[domain.id] ?? []
           if (groupTasks.length === 0) return null
           return (
             <div key={domain.id}>
-              <h2 className="text-xl font-semibold text-gray-900 mb-1">{domain.name}</h2>
-              <p className="text-sm text-gray-500 mb-3">{domain.description}</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {groupTasks.map((task) => {
+              <h2 className="text-xl font-bold text-gray-900 mb-4">{domain.name}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {groupTasks.map((task, idx) => {
                   const taskResults = results.filter((r) => r.task_id === task.id)
-                  const sotaResult = taskResults.find((r) => r.is_sota)
                   const primaryMetric = task.metrics[0]
-                  const sotaValue = sotaResult && primaryMetric
-                    ? sotaResult.metric_values[primaryMetric.name]
-                    : null
 
                   return (
                     <Link
                       key={task.id}
                       href={`/tasks/${task.slug}`}
-                      className="bg-white border border-gray-200 rounded-lg p-4 hover:border-brand-300 transition-colors no-underline block"
+                      className="border border-gray-200 rounded-xl p-4 hover:border-gray-300 hover:shadow-sm transition-all block"
                     >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="min-w-0">
-                          <div className="font-semibold text-gray-900 group-hover:text-brand-600 mb-1">
-                            {task.name}
-                          </div>
-                          <p className="text-sm text-gray-500 line-clamp-2">{task.description}</p>
+                      <div className="flex items-start gap-3 mb-3">
+                        <TaskIcon index={idx} />
+                        <div className="font-semibold text-gray-900 text-sm leading-snug pt-1">
+                          {task.name}
                         </div>
-                        {sotaValue !== null && primaryMetric && (
-                          <div className="shrink-0 text-right">
-                            <div className="text-xs text-gray-400">SOTA {primaryMetric.name}</div>
-                            <div className="font-mono text-sm font-bold text-brand-700">
-                              {Number.isInteger(sotaValue) ? sotaValue : sotaValue.toFixed(4)}
-                            </div>
-                          </div>
-                        )}
                       </div>
-                      <div className="flex items-center gap-3 mt-3 text-xs text-gray-400">
-                        <span>{taskResults.length} results</span>
-                        <span>·</span>
-                        <span>{task.metrics.map((m) => m.name).join(", ")}</span>
+                      <p className="text-xs text-gray-500 line-clamp-2 mb-3 leading-relaxed">
+                        {task.description}
+                      </p>
+                      <div className="text-xs text-gray-400">
+                        {taskResults.length} result{taskResults.length !== 1 ? "s" : ""}
+                        {primaryMetric && (
+                          <span className="ml-2 text-gray-300">· {primaryMetric.name}</span>
+                        )}
                       </div>
                     </Link>
                   )
@@ -82,15 +97,18 @@ export default function TasksPage() {
 
         {ungrouped.length > 0 && (
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">Other</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {ungrouped.map((task) => (
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Other</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {ungrouped.map((task, idx) => (
                 <Link
                   key={task.id}
                   href={`/tasks/${task.slug}`}
-                  className="bg-white border border-gray-200 rounded-lg p-4 hover:border-brand-300 transition-colors no-underline block"
+                  className="border border-gray-200 rounded-xl p-4 hover:border-gray-300 hover:shadow-sm transition-all block"
                 >
-                  <div className="font-semibold text-gray-900">{task.name}</div>
+                  <div className="flex items-start gap-3">
+                    <TaskIcon index={idx} />
+                    <div className="font-semibold text-gray-900 text-sm pt-1">{task.name}</div>
+                  </div>
                 </Link>
               ))}
             </div>
