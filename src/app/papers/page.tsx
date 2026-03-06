@@ -67,7 +67,6 @@ export default function PapersPage() {
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-1 hover:text-brand-600"
-                  onClick={(e) => e.stopPropagation()}
                 >
                   <ExternalLink size={12} />
                   arXiv
@@ -78,7 +77,6 @@ export default function PapersPage() {
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-1 hover:text-brand-600"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <ExternalLink size={12} />
                     {officialRepo.framework ?? "Code"}
