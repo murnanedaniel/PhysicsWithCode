@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "slug": "top-tag-reference",
+    "name": "Top Quark Tagging Reference Dataset",
+    "description": "1.2M training jets (600k top, 600k QCD) and 400k test jets. Each jet contains up to 200 constituents represented as (pT, η, φ, E) 4-momenta. Generated with PYTHIA8 + DELPHES fast detector simulation.",
+    "format": "HDF5",
+    "size_gb": 8,
+    "homepage_url": "https://zenodo.org/record/2603256",
+    "download_url": "https://zenodo.org/record/2603256",
+    "domain_id": 2,
+    "task_ids": [1]
+  },
+  {
+    "id": 2,
+    "slug": "quark-gluon-dataset",
+    "name": "Quark-Gluon Dataset (CMS Open Data)",
+    "description": "Jet images and particle lists derived from CMS Open Data collision events. 700k training jets, balanced quark/gluon classes.",
+    "format": "HDF5",
+    "size_gb": 14,
+    "homepage_url": "https://zenodo.org/record/3164691",
+    "download_url": "https://zenodo.org/record/3164691",
+    "domain_id": 2,
+    "task_ids": [2]
+  },
+  {
+    "id": 3,
+    "slug": "pdebench-navier-stokes",
+    "name": "PDEBench Navier-Stokes",
+    "description": "2D incompressible Navier-Stokes trajectories at multiple viscosities (ν=1e-3, 1e-4, 1e-5). Each trajectory is 1000 time steps on a 64×64 spatial grid.",
+    "format": "HDF5",
+    "size_gb": 42,
+    "homepage_url": "https://github.com/pdebench/PDEBench",
+    "download_url": "https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-2986",
+    "domain_id": 7,
+    "task_ids": [3]
+  },
+  {
+    "id": 4,
+    "slug": "weatherbench2-era5",
+    "name": "WeatherBench 2 (ERA5)",
+    "description": "ERA5 reanalysis data at 1.5° resolution for global weather forecasting benchmarking. Covers 1979–2022. Standard train/validation/test splits defined by WeatherBench 2.",
+    "format": "NetCDF",
+    "size_gb": 3600,
+    "homepage_url": "https://sites.research.google/weatherbench/",
+    "download_url": "https://console.cloud.google.com/storage/browser/weatherbench2",
+    "domain_id": 8,
+    "task_ids": [4]
+  },
+  {
+    "id": 5,
+    "slug": "md17",
+    "name": "MD17",
+    "description": "Ab-initio molecular dynamics trajectories for 8 small organic molecules (aspirin, benzene, ethanol, malonaldehyde, naphthalene, salicylic acid, toluene, uracil). Energies and forces computed at DFT level.",
+    "format": "NPY",
+    "size_gb": 0.5,
+    "homepage_url": "http://www.sgdml.org/#datasets",
+    "download_url": "http://www.sgdml.org/#datasets",
+    "domain_id": 9,
+    "task_ids": [5]
+  }
+]

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav-bg: #1a2f6e;
+    --nav-text: #e8eeff;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+  a {
+    @apply text-brand-600 hover:text-brand-700;
+  }
+}
+
+@layer utilities {
+  .mono {
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  }
+}

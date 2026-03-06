@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "slug": "top-quark-tagging",
+    "name": "Top Quark Tagging",
+    "description": "Binary classification of jets as originating from a top quark decay (signal) or QCD background. The benchmark dataset contains 1.2M jets with 200 jet constituents each, represented as 4-momenta. Standard metric is AUC and background rejection at fixed signal efficiency (e.g. 1/εB at εS = 0.3).",
+    "domain_id": 2,
+    "metrics": [
+      { "name": "AUC", "higher_is_better": true },
+      { "name": "1/εB at εS=0.3", "higher_is_better": true }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "quark-gluon-discrimination",
+    "name": "Quark/Gluon Discrimination",
+    "description": "Classify jets as quark-initiated or gluon-initiated using jet constituents. A fundamental QCD measurement with applications in many analyses.",
+    "domain_id": 2,
+    "metrics": [
+      { "name": "AUC", "higher_is_better": true }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "navier-stokes-2d-turbulence",
+    "name": "2D Navier-Stokes (Turbulence)",
+    "description": "Autoregressive prediction of vorticity fields for 2D incompressible Navier-Stokes with periodic boundary conditions and varying viscosity. Evaluated on PDEBench benchmark data.",
+    "domain_id": 7,
+    "metrics": [
+      { "name": "nRMSE", "higher_is_better": false }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "weather-forecasting-z500",
+    "name": "Global Weather Forecasting (Z500)",
+    "description": "Deterministic medium-range weather forecasting. Primary metric is RMSE of geopotential height at 500 hPa (Z500) at 1-day and 5-day lead times vs. ERA5 reanalysis ground truth.",
+    "domain_id": 8,
+    "metrics": [
+      { "name": "Z500 RMSE 1d (m²/s²)", "higher_is_better": false },
+      { "name": "Z500 RMSE 5d (m²/s²)", "higher_is_better": false }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "md17-molecular-dynamics",
+    "name": "MD17 — Molecular Dynamics",
+    "description": "Machine learning force field benchmark. Predict energies and forces for small organic molecules (aspirin, ethanol, malonaldehyde, etc.) from ab-initio molecular dynamics trajectories. Evaluated per molecule.",
+    "domain_id": 9,
+    "metrics": [
+      { "name": "Energy MAE (meV)", "higher_is_better": false },
+      { "name": "Force MAE (meV/Å)", "higher_is_better": false }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  { "id": 1, "slug": "particle-physics", "name": "Particle Physics & HEP", "parent_id": null, "description": "Machine learning applications in high-energy physics, including the LHC experiments at CERN." },
+  { "id": 2, "slug": "jet-tagging", "name": "Jet Tagging", "parent_id": 1, "description": "Classification of hadronic jets from quark/gluon/boson/top-quark origin." },
+  { "id": 3, "slug": "event-classification", "name": "Event Classification", "parent_id": 1, "description": "Signal vs background classification in particle collision events." },
+  { "id": 4, "slug": "detector-simulation", "name": "Detector Simulation", "parent_id": 1, "description": "Generative models to accelerate or replace GEANT4 detector simulation." },
+  { "id": 5, "slug": "anomaly-detection-hep", "name": "Anomaly Detection (HEP)", "parent_id": 1, "description": "Model-agnostic searches for new physics via anomaly detection." },
+  { "id": 6, "slug": "fluid-dynamics", "name": "Fluid Dynamics", "parent_id": null, "description": "Neural surrogates and operators for solving Navier-Stokes and related PDEs." },
+  { "id": 7, "slug": "navier-stokes", "name": "Navier-Stokes", "parent_id": 6, "description": "Direct numerical simulation surrogates for turbulent fluid flow." },
+  { "id": 8, "slug": "weather-climate", "name": "Weather & Climate", "parent_id": null, "description": "ML-based weather forecasting and climate projection models." },
+  { "id": 9, "slug": "molecular-dynamics", "name": "Molecular Dynamics", "parent_id": null, "description": "Machine learning force fields and property prediction for molecules." }
+]
